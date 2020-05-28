@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <script >
+
+        this.name = 1; //这个nam相当于window的属性
+        console.log(this);  //window
+
+        function A() {  //这个A函数即可以window的方法，也可以是一个对象
+            this.name1 = 1;
+            console.log(this); //函数调用就是window,对象调用就是A
+        }
+        A();
+        new A();
+
+        var B = {
+            name2: 2,
+            hello: function () {
+                console.log(this); //B
+            }
+        }
+        B.hello();
+
+
+    </script>
+</head>
+<body>
+dd
+</body>
+</html>
