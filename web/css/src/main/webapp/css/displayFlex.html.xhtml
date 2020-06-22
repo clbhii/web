@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Title</title>
+</head>
+<body style="background-color: yellow">
+       <a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank">https://www.runoob.com/w3cnote/flex-grammar.html</a>
+    <div style="display: flex">
+        <div>区域1</div>
+        <div>区域2</div>
+    </div>
+    <!-- flex-direction -->
+    <div style="font-size: larger;color:white;background-color: black"> flex-direction属性决定主轴的方向（即项目的排列方向）。 </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; flex-direction: row">
+        <div>区域1</div>
+        <div>区域2</div>
+    </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; flex-direction: row-reverse">
+       <div>区域1</div>
+       <div>区域2</div>
+    </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; flex-direction: column">
+        <div>区域1</div>
+        <div>区域2</div>
+    </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; flex-direction: column-reverse">
+       <div>区域1</div>
+       <div>区域2</div>
+    </div>
+    <!-- flex-wrap -->
+    <div style="font-size: larger;color:white;background-color: black"> flex-wrap 默认情况下，项目都排在一条线（又称”轴线”）上。flex-wrap属性定义，如果一条轴线排不下，如何换行。</div>
+    <div style="border: 1px solid #c3c3c3;display: flex; flex-wrap: nowrap">
+        <div  style="width: 800px">区域1</div>
+        <div  style="width: 800px">区域2</div>
+        <div  style="width: 800px">区域3</div>
+    </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; flex-wrap: wrap">
+       <div  style="width: 800px">区域1</div>
+       <div  style="width: 800px">区域2</div>
+       <div  style="width: 800px">区域3</div>
+    </div>
+    <!-- justify-content -->
+    <div style="font-size: larger;color:white;background-color: black"> justify-content属性定义了项目在主轴上的对齐方式 </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; justify-content: center">
+        <div>区域1</div>
+        <div>区域2</div>
+    </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; justify-content: flex-start">
+        <div>区域1</div>
+        <div>区域2</div>
+    </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; justify-content: flex-end">
+        <div>区域1</div>
+        <div>区域2</div>
+    </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; justify-content: space-between">
+        <div>区域1</div>
+        <div>区域2</div>
+    </div>
+    <div style="border: 1px solid #c3c3c3;display: flex; justify-content: space-around">
+        <div style="background-color:red;">区域1</div>
+        <div style="background-color:gray;">区域2</div>
+    </div>
+    <!-- align-items -->
+    <div style="font-size: larger;color:white;background-color: black"> align-items属性定义项目在交叉轴上如何对齐。 </div>
+    <div style="display: flex;">
+        <div style="border: 1px solid #c3c3c3;height: 250px;display: flex; align-items: flex-start">
+            <div style="background-color:red;width: 100px;height: 100px">区域1</div>
+            <div style="background-color:gray;width: 100px;height: 200px">区域2</div>
+        </div>
+        <div style="width: 30px;background-color: black"></div>
+        <div style="border: 1px solid #c3c3c3;height: 250px;display: flex; align-items: flex-end">
+            <div style="background-color:red;width: 100px;height: 100px">区域1</div>
+            <div style="background-color:gray;width: 100px;height: 200px">区域2</div>
+        </div>
+        <div style="width: 30px;background-color: black"></div>
+        <div style="border: 1px solid #c3c3c3;height: 250px;display: flex; align-items: center">
+            <div style="background-color:red;width: 100px;height: 100px">区域1</div>
+            <div style="background-color:gray;width: 100px;height: 200px">区域2</div>
+        </div>
+    </div>
+    <!-- align-content  -->
+    <div style="font-size: larger;color:white;background-color: black"> align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。  </div>
+    <div style="display: flex;">
+        <div style="border: 1px solid #c3c3c3;width:250px;height:300px; display: flex;flex-wrap:wrap;align-content: flex-start">
+            <div style="background-color:red;width:100px;height: 100px">区域1</div>
+            <div style="background-color:gray;width:100px;height: 100px">区域2</div>
+            <div style="background-color:green;width:100px;height: 100px">区域3</div>
+        </div>
+        <div style="width: 30px;background-color: black"></div>
+        <div style="border: 1px solid #c3c3c3;width:250px;height:300px;display: flex;flex-wrap:wrap;align-content: flex-end">
+            <div style="background-color:red;width:100px;height: 100px">区域1</div>
+            <div style="background-color:gray;width:100px;height: 100px">区域2</div>
+            <div style="background-color:green;width:100px;height: 100px">区域3</div>
+        </div>
+        <div style="width: 30px;background-color: black"></div>
+        <div style="border: 1px solid #c3c3c3;width:250px;height:300px;display: flex;flex-wrap:wrap;align-content: center">
+            <div style="background-color:red;width:100px;height: 100px">区域1</div>
+            <div style="background-color:gray;width:100px;height: 100px">区域2</div>
+            <div style="background-color:green;width:100px;height: 100px">区域3</div>
+        </div>
+        <div style="width: 30px;background-color: black"></div>
+        <div style="border: 1px solid #c3c3c3;width:250px;height:300px;display: flex;flex-wrap:wrap;align-content: stretch">
+            <div style="background-color:red;width:100px;height: 100px">区域1</div>
+            <div style="background-color:gray;width:100px;height: 100px">区域2</div>
+            <div style="background-color:green;width:100px;height: 100px">区域3</div>
+        </div>
+    </div>
+    <div style="display: flex;">
+
+    </div>
+    <!-- flex-item相关属性  -->
+    <div style="font-size: larger;color:white;background-color: black"> flex-item相关属性</div>
+    <div style="font-size: larger;color:white;background-color: black;margin-left: 20px"> order </div>
+    <div style="border: 1px solid #c3c3c3;display: flex;margin-left: 20px">
+        <div style="background-color:white;border: 1px solid #c3c3c3;order: 2;">
+            <div style="font-size: 30px">item 1</div>
+            <div>order:2</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+        <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;order: 1;">
+            <div style="font-size: 30px">item 2</div>
+            <div>order:1</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+        <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;order: 3; ">
+            <div style="font-size: 30px">item 3</div>
+            <div>order:3</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+    </div>
+    <!-- 按比例或固定长度混合缩放-->
+    <div style="font-size: larger;color:white;background-color: black;margin-left: 20px"> flex-grow（放大比例，剩余空间怎么分配,如下图所示，剩余空间的分配比例是1:2:1） </div>
+    <div style="border: 1px solid #c3c3c3;display: flex;margin-left: 20px">
+        <div style="background-color:white;border: 1px solid #c3c3c3;flex-grow: 1;">
+            <div style="font-size: 30px">item 1</div>
+            <div>order:0</div>
+            <div>flex-grow:1</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+        <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;flex-grow: 2;">
+            <div style="font-size: 30px">item 2</div>
+            <div>order:0</div>
+            <div>flex-grow:2</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+        <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;flex-grow: 1; ">
+            <div style="font-size: 30px">item 3</div>
+            <div>order:0</div>
+            <div>flex-grow:1</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+    </div>
+    <div style="font-size: larger;color:white;background-color: black;margin-left: 20px"> flex-shrink （缩小比例，超出空间怎么压缩） </div>
+    <div style="border: 1px solid #c3c3c3;display: flex;margin-left: 20px">
+        <div style="background-color:white;border: 1px solid #c3c3c3;flex-shrink: 1;">
+            <div style="font-size: 30px">item 1</div>
+            <div>order:0</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:1</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+        <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;flex-shrink: 2;">
+            <div style="font-size: 30px">item 2</div>
+            <div>order:0</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:2</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+        <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;flex-shrink: 1; ">
+            <div style="font-size: 30px">item 3</div>
+            <div>order:0</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:1</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+    </div>
+    <div style="font-size: larger;color:white;background-color: black;margin-left: 20px">  flex-basis  (item所占主轴空间，优先级高于width) </div>
+    <div style="border: 1px solid #c3c3c3;display: flex;margin-left: 20px">
+        <div style="background-color:white;border: 1px solid #c3c3c3;flex-basis:500px">
+            <div style="font-size: 30px">item 1</div>
+            <div>order:0</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:500</div>
+            <div>align-self :auto</div>
+        </div>
+        <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;">
+            <div style="font-size: 30px">item 2</div>
+            <div>order:0</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+        <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;">
+            <div style="font-size: 30px">item 3</div>
+            <div>order:0</div>
+            <div>flex-grow:0</div>
+            <div>flex-shrink:0</div>
+            <div>flex-basis:auto</div>
+            <div>align-self :auto</div>
+        </div>
+    </div>
+   <div style="font-size: larger;color:white;background-color: black;margin-left: 20px">   align-self  (对齐方式，取值和align相同，覆盖align-items)</div>
+   <div style="border: 1px solid #c3c3c3;display: flex;margin-left: 20px">
+       <div style="background-color:white;border: 1px solid #c3c3c3;align-self:center">
+           <div style="font-size: 30px">item 1</div>
+           <div>order:0</div>
+           <div>flex-grow:0</div>
+           <div>flex-shrink:0</div>
+           <div>flex-basis:auto</div>
+           <div>align-self :center</div>
+       </div>
+       <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;height: 200px">
+           <div style="font-size: 30px">item 2</div>
+           <div>order:0</div>
+           <div>flex-grow:0</div>
+           <div>flex-shrink:0</div>
+           <div>flex-basis:auto</div>
+           <div>align-self :auto</div>
+       </div>
+       <div style="background-color:white;border: 1px solid #c3c3c3;margin-left: 5px;">
+           <div style="font-size: 30px">item 3</div>
+           <div>order:0</div>
+           <div>flex-grow:0</div>
+           <div>flex-shrink:0</div>
+           <div>flex-basis:auto</div>
+           <div>align-self :auto</div>
+       </div>
+   </div>
+
+
+</body>
+</html>
