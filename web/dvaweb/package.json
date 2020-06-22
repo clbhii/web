@@ -8,8 +8,13 @@
   },
   "dependencies": {
     "dva": "^2.4.1",
+    "dayjs": "^1.8.18",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "antd": "^4.3.4",
+    "react-dom": "^16.2.0",
+    "prop-types": "^15.7.2",
+    "qs": "^6.9.4",
+    "mockjs": "^1.1.0"
   },
   "devDependencies": {
     "babel-plugin-dva-hmr": "^0.3.2",
